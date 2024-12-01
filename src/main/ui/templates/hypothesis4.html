@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Hypothesis 4 - Instacart Analysis{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mt-5">Hypothesis 4 Analysis</h1>
+    <p class="lead">Customers who place larger orders tend to include products from diverse departments.</p>
+    <p>Average Number of Departments per Order: {{ result.average_departments | round(2) }}</p>
+    <p>Correlation Between Order Size and Number of Departments: {{ result.correlation | round(2) }}</p>
+</div>
+{% endblock %}

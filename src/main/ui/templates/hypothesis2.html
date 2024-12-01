@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Hypothesis 2 - Instacart Analysis{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mt-5">Hypothesis 2 Analysis</h1>
+    <p class="lead">Reordered products represent a significant proportion of customers' shopping carts.</p>
+    <p>Total Products Analyzed: {{ result.total_products }}</p>
+    <p>Reordered Products: {{ result.reordered_products }}</p>
+    <p>Percentage of Reordered Products: {{ result.percentage_reordered | round(2) }}%</p>
+</div>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Aisles - Instacart CRUD{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mt-5">Aisles</h1>
+    <button id="create-aisle-btn" class="btn btn-primary mb-3">Create New Aisle</button>
+    <table class="table table-striped" id="aisles-table">
+        <thead>
+            <tr>
+                <th>Aisle ID</th>
+                <th>Aisle Name</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aisles will be populated here -->
+        </tbody>
+    </table>
+</div>
+
+<!-- Modal for Create/Edit Aisle -->
+<div class="modal fade" id="aisle-modal" tabindex="-1" aria-labelledby="aisleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal content will be injected here -->
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<!-- Include custom JavaScript for aisles -->
+<script src="{{ url_for('static', path='/js/aisles.js') }}"></script>
+{% endblock %}

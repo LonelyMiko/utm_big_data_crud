@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Orders - Instacart CRUD{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mt-5">Orders</h1>
+    <button id="create-order-btn" class="btn btn-primary mb-3">Create New Order</button>
+    <table class="table table-striped" id="orders-table">
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>User ID</th>
+                <th>Order Number</th>
+                <th>Order DOW</th>
+                <th>Order Hour</th>
+                <th>Days Since Prior</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Orders will be populated here -->
+        </tbody>
+    </table>
+</div>
+
+<!-- Modal for Create/Edit Order -->
+<div class="modal fade" id="order-modal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal content will be injected here -->
+    </div>
+  </div>
+</div>
+{% endblock %}

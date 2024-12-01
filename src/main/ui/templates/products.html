@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}Products - Instacart CRUD{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mt-5">Products</h1>
+    <button id="create-product-btn" class="btn btn-primary mb-3">Create New Product</button>
+    <table class="table table-striped" id="products-table">
+        <thead>
+            <tr>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Aisle ID</th>
+                <th>Department ID</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Products will be populated here -->
+        </tbody>
+    </table>
+</div>
+
+<!-- Modal for Create/Edit Product -->
+<div class="modal fade" id="product-modal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal content will be injected here -->
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', path='/js/products.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Hypothesis 1 - Instacart Analysis{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mt-5">Hypothesis 1 Analysis</h1>
+    <p class="lead">Products in the same category or aisle are frequently bought together.</p>
+    <p>Total Orders Analyzed: {{ result.total_orders }}</p>
+    <p>Orders with Products from the Same Aisle: {{ result.same_aisle_orders }}</p>
+    <p>Percentage of Such Orders: {{ result.percentage_same_aisle | round(2) }}%</p>
+</div>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Hypothesis 3 - Instacart Analysis{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mt-5">Hypothesis 3 Analysis</h1>
+    <p class="lead">Customers buy basic products more frequently in morning orders than in evening orders.</p>
+    <p>Number of Basic Products Purchased in Morning: {{ result.morning_count }}</p>
+    <p>Number of Basic Products Purchased in Evening: {{ result.evening_count }}</p>
+</div>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Hypothesis 5 - Instacart Analysis{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mt-5">Hypothesis 5 Analysis</h1>
+    <p class="lead">Orders placed on weekends contain, on average, more products than orders during the week.</p>
+    <p>Average Number of Products per Weekend Order: {{ result.avg_weekend | round(2) }}</p>
+    <p>Average Number of Products per Weekday Order: {{ result.avg_weekday | round(2) }}</p>
+</div>
+{% endblock %}

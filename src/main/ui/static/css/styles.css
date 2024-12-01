@@ -1,0 +1,74 @@
+/* styles.css */
+
+/* Body Background and Font */
+body {
+    background-color: #f8f9fa; /* Light gray background */
+    font-family: 'Roboto', sans-serif; /* Modern font */
+}
+
+/* Header Styles */
+h1 {
+    color: #343a40; /* Dark gray color */
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+/* Lead Paragraph */
+.lead {
+    color: #6c757d; /* Medium gray */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* List Styles */
+.list-group-item {
+    font-size: 1.2rem;
+    background-color: #ffffff; /* White background */
+}
+
+.list-group-item a {
+    text-decoration: none;
+    color: #007bff; /* Bootstrap primary color */
+}
+
+.list-group-item a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+.list-group-item:not(:last-child) {
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px;
+    margin-top: 100px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: #6c757d;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    .list-group-item {
+        font-size: 1rem;
+    }
+}

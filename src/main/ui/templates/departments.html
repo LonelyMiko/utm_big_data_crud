@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Departments - Instacart CRUD{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mt-5">Departments</h1>
+    <button id="create-department-btn" class="btn btn-primary mb-3">Create New Department</button>
+    <table class="table table-striped" id="departments-table">
+        <thead>
+            <tr>
+                <th>Department ID</th>
+                <th>Department Name</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Departments will be populated here -->
+        </tbody>
+    </table>
+</div>
+
+<!-- Modal for Create/Edit Department -->
+<div class="modal fade" id="department-modal" tabindex="-1" aria-labelledby="departmentModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal content will be injected here -->
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<!-- Include custom JavaScript for departments -->
+<script src="{{ url_for('static', path='/js/departments.js') }}"></script>
+{% endblock %}

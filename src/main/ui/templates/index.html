@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Instacart CRUD{% endblock %}
+
+{% block head_extra %}
+<!-- Link to your custom styles.css -->
+<link rel="stylesheet" href="{{ url_for('static', path='/css/styles.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mt-5">Instacart Dataset CRUD Operations</h1>
+    <p class="lead">Select a category to manage:</p>
+    <ul class="list-group">
+        <li class="list-group-item"><a href="/orders">Orders</a></li>
+        <li class="list-group-item"><a href="/aisles">Aisles</a></li>
+        <li class="list-group-item"><a href="/departments">Departments</a></li>
+        <li class="list-group-item"><a href="/products">Products</a></li>
+        <li class="list-group-item"><a href="/analysis">Analysis</a></li>
+    </ul>
+</div>
+<footer class="footer">
+    <p>&copy; 2024 Instacart CRUD Application For BigData UTM course</p>
+</footer>
+{% endblock %}
