@@ -11,3 +11,5 @@ Pay attention to the database name inside MongoDB, it must be `instacart_db` and
 5. products
 
 After this run the `app.py` and access `127.0.0.1:8000/`
+
+Instacart Dataset: https://www.kaggle.com/c/instacart-market-basket-analysis/data
